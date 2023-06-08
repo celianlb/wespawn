@@ -7,10 +7,30 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontFamily: {
+        'rnssanz-light' : ['var(--font-rnssanz-light)'],
+        'rnssanz-bold' : ['var(--font-rnssanz-bold)'],
+        'ppneuemachina' : ['var(--font-ppneuemachina)'],
+      },
+      textColor: {
+        'black-spec' : '#070707',
+        'pink-spec' : '#E84CA9',
+        'yellow-spec' : '#D2F843',
+      },
+      colors: {
+        'black-spec' : '#070707',
+        'pink-spec' : '#E84CA9',
+        'yellow-spec' : '#D2F843',
+      },
+      backgroundColor: {
+        'black-spec' : '#070707',
+        'pink-spec' : '#E84CA9',
+        'yellow-spec' : '#D2F843',
+      },
+
+      container: {
+        center: true,
+        padding: '1rem',
       },
     },
   },

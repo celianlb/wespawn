@@ -1,0 +1,32 @@
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 33px;
+    height: 35px;
+    cursor: pointer;
+    
+  }
+  
+  .line {
+    width: 33px;
+    height: 19px;
+    background-color: white;
+    margin-bottom: 9px;
+    border-radius: 100px;
+  }
+  
+  .line:first-child {
+    width: 33px;
+  }
+  
+  .line:nth-child(2) {
+    width: 22.5px;
+  }
+  
+  .line:last-child {
+    width: 13.5px;
+  }
+
+  
