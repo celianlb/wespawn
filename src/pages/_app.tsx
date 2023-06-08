@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import localFont from '@next/font/local'
+import MatomoScript from '@/components/MatomoScript'
 
 const RNSSanzL = localFont({
   src: [
@@ -33,14 +34,12 @@ const PPNeueMachina = localFont({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-  <style jsx global>
-        {`
-          :root {
-            --font-rnssanz-light: ${RNSSanzL.style.fontFamily};
-            --font-rnssanz-bold: ${RNSSanzB.style.fontFamily};
-            --font-ppneuemachina: ${PPNeueMachina.style.fontFamily};
-          }
-        `}
-      </style>
-  return <Component {...pageProps} />
+  return (
+    <main
+      className={``}
+    >
+      <Component {...pageProps} />
+      <MatomoScript />
+    </main>
+  );
 }

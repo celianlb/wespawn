@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 import { Transition } from '@headlessui/react';
-import styles from '../styles/BurgerMenu.module.css';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,12 +30,12 @@ const BurgerMenu = () => {
         leaveTo="transform translate-x-full"
         className="fixed inset-0 bg-black-spec z-50"
       >
-        <div className="flex justify-end p-4">
-          <button className="text-white" onClick={toggleMenu}>
-            <FiX size={40} />
+        <div className="flex justify-end pr-4">
+          <button className="text-white " onClick={toggleMenu}>
+            <FiX size={50}/>
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center h-full">
+        <div className="flex flex-col items-center justify-center h-full pb-10">
           <a href="#section1" className="text-white mb-[56px]" onClick={closeMenu}>
             PRÉSENTATION
           </a>
