@@ -14,8 +14,6 @@ export default function NewsletterForm() {
     resolver: zodResolver(schema)
   });
 
-  const [emailPlaceholder, setEmailPlaceholder] = useState('Adresse e-mail');
-
   const onSubmit: SubmitHandler<NewsletterFormInputs> = async data => {
     const res = await fetch('/api/newsletter', {
       method: 'POST',
@@ -29,17 +27,12 @@ export default function NewsletterForm() {
     console.log(result);
   };
 
-  const handleEmailFocus = () => {
-    setEmailPlaceholder('');
-  };
-
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className='md:w-[50%]'>
       <input 
         className='inp' 
         type="email"
-        placeholder={emailPlaceholder}
-        onFocus={handleEmailFocus}{...register('email')} />
+        placeholder="Adresse e-mail" {...register('email')} />
       {errors.email && <p>Entrer une adresse e-mail valide</p>}
       <button className='btn font-bold' type="submit">Envoyer</button>
       <style jsx>{`

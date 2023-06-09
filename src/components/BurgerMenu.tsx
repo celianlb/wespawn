@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 import { Transition } from '@headlessui/react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +18,12 @@ const BurgerMenu = () => {
   return (
     <div className="relative">
       <div className="burgerMenu" onClick={toggleMenu}>
-        <div className="line" />
-        <div className="line" />
-        <div className="line" />
+        <Image 
+            src= '/img/hamburger-menu.svg'
+            width={38}
+            height={38}
+            alt='WeSpawn Logo'
+        />
       </div>
       <Transition
         show={isOpen}
@@ -30,24 +35,25 @@ const BurgerMenu = () => {
         leaveTo="transform translate-x-full"
         className="fixed inset-0 bg-black-spec z-50"
       >
-        <div className="flex justify-end pr-4">
-          <button className="text-white " onClick={toggleMenu}>
-            <FiX size={50}/>
+        <div className="flex justify-end pr-8 pt-3 bg-var-black">
+          <button className="text-white" onClick={toggleMenu}>
+            <FiX size={38}/>
           </button>
         </div>
-        <div className="flex flex-col items-center justify-center h-full pb-10">
-          <a href="#section1" className="text-white mb-[56px]" onClick={closeMenu}>
+        <div className=" bg-var-black flex flex-col items-center justify-center h-full pb-10 font-ppneuemachina">
+            <Link href="#section1" className="text-white mb-[56px] " onClick={closeMenu}>
             PRÉSENTATION
-          </a>
-          <a href="#section2" className="text-white mb-[56px]" onClick={closeMenu}>
+            </Link>
+            <Link href="#section2" className="text-white mb-[56px]" onClick={closeMenu}>
             NEWSLETTER
-          </a>
-          <a href="#section3" className="text-white mb-[56px]" onClick={closeMenu}>
+            </Link>
+            <Link href="#section3" className="text-white mb-[56px]" onClick={closeMenu}>
             NOUS CONTACTER
-          </a>
-          {/* Ajoute ici les autres redirections */}
+            </Link>
         </div>
       </Transition>
+
+      {/* Style */}
       <style jsx>{`
       .burgerMenu {
         display: flex;
@@ -56,31 +62,8 @@ const BurgerMenu = () => {
         align-items: flex-end;
         width: 33px;
         height: 35px;
-        cursor: pointer;
-        
-      }
-      
-      .line {
-        width: 33px;
-        height: 19px;
-        background-color: white;
-        margin-bottom: 9px;
-        border-radius: 100px;
-      }
-      
-      .line:first-child {
-        width: 33px;
-      }
-      
-      .line:nth-child(2) {
-        width: 22.5px;
-      }
-      
-      .line:last-child {
-        width: 13.5px;
-      }
-    
-
+        cursor: pointer;        
+      }   
       `}</style>
     </div>
 
@@ -89,4 +72,3 @@ const BurgerMenu = () => {
   };
   
   export default BurgerMenu;
-  

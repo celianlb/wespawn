@@ -7,13 +7,17 @@ export default async function handler(
 ) {
     if (req.method === 'POST') {
         const { email } = req.body;
+        const apiKey = process.env.BREVO_API_KEY;
+        if (!apiKey) {
+              return res.status(500).json({ error: 'Missing API Key' });
+        }
     
         // Add the email to Sendinblue contacts
         const response = await fetch('https://api.brevo.com/v3/contacts', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
-            'api-key': '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'
+            'api-key': apiKey,
           },
           body: JSON.stringify({
             email,

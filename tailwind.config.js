@@ -7,31 +7,28 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        'rnssanz-light' : ['var(--font-rnssanz-light)'],
-        'rnssanz-bold' : ['var(--font-rnssanz-bold)'],
-        'ppneuemachina' : ['var(--font-ppneuemachina)'],
-      },
-      textColor: {
-        'black-spec' : '#070707',
-        'pink-spec' : '#E84CA9',
-        'yellow-spec' : '#D2F843',
-      },
-      colors: {
-        'black-spec' : '#070707',
-        'pink-spec' : '#E84CA9',
-        'yellow-spec' : '#D2F843',
-      },
-      backgroundColor: {
-        'black-spec' : '#070707',
-        'pink-spec' : '#E84CA9',
-        'yellow-spec' : '#D2F843',
-      },
-
       container: {
         center: true,
         padding: '1rem',
       },
+      colors : {
+        'var-black' : '#070707',
+        'var-yellow' : '#EAFE52',
+        'var-pink' : '#E84CA9',
+      },
+      fontSize: {
+        h1: ['54px', '1px'],
+        h2: ['40px', '1px'],
+        h2: ['35px', '1px'],
+        txt1: ['20px', '1px'],
+        txt2: ['20px', '1px'],
+        txt3: ['16px', '1pxh'],
+      },
+      fontFamily : {
+        'ppneuemachina': 'var(--font-ppneuemachina)',
+        'rnssanz': 'var(--font-rnssanz)',
+        'visbycf': 'var(--font-visbycf)',
+      }
     },
   },
   plugins: [],
