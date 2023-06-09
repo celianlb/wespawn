@@ -41,13 +41,13 @@ const BurgerMenu = () => {
           </button>
         </div>
         <div className=" bg-var-black flex flex-col items-center justify-center h-full pb-10 font-ppneuemachina">
-            <Link href="#section1" className="text-white mb-[56px] " onClick={closeMenu}>
+            <Link href="#presentation" className="text-white mb-[56px] " onClick={closeMenu}>
             PRÉSENTATION
             </Link>
-            <Link href="#section2" className="text-white mb-[56px]" onClick={closeMenu}>
+            <Link href="#newsletter" className="text-white mb-[56px]" onClick={closeMenu}>
             NEWSLETTER
             </Link>
-            <Link href="#section3" className="text-white mb-[56px]" onClick={closeMenu}>
+            <Link href="#contact" className="text-white mb-[56px]" onClick={closeMenu}>
             NOUS CONTACTER
             </Link>
         </div>

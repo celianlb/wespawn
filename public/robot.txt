@@ -1,0 +1,6 @@
+User-Agent: Googlebot
+Disallow :
+User-Agent: *
+Allow : / 
+User-agent: *
+Sitemap: http://www.mettre notre url/SEO/sitemap.xml

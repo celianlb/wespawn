@@ -12,8 +12,8 @@ export default function Home() {
       <Header />
       <body>
         <div className="wrapper">
-              <div className="layout h-[250px]"></div>
-              <div id='section1' className='section-about container min-h-[250px] '>
+              <div className="layout min-h-[250px]"></div>
+              <div id='presentation' className='section-about container min-h-[250px] '>
                 <h1>
                   <Image 
                     src= '/img/logo.png'
@@ -26,12 +26,10 @@ export default function Home() {
                 <h1 className='pb-2 font-ppneuemachina'>L'ESPORT FAIT SUR MESURE</h1>
                 <p className='font-rnssanz'>
                   L'écosystème qui facilite <b>l'organisation des compétitions d'e-sport</b> pour une immersion professionnelles de tous les joueurs.
-                </p>    
-                <a href="#section2">            
-                <button className='bg-var-yellow btn1 font-bold' >En savoir plus</button>
-                </a>
+                </p>                
+                <button className='bg-var-yellow btn1 font-bold z-10' ><a href="#section2">En savoir plus</a></button>              
               </div>
-              <div id='section2' className=' container min-h-[250px]'>
+              <div className=' container min-h-[250px]'>
                 <h2 className='mb-8 pt-[106px] font-ppneuemachina'>C'EST QUOI ?</h2>
                 <p className=''>
                   Conçu pour les organisateurs d'évènements e-sportif, La plateforme <b>WESPAWN</b> vous garantie une <b>aide à la gestion</b> de vos compétitions en toute simplicité et une <b>visibilité assurée</b> auprès des joueurs.
@@ -42,11 +40,11 @@ export default function Home() {
                 <h2 className='font-ppneuemachina'>OUVERTURE DANS</h2>
                 <Countdown/>
               </div>
-              <div id='section3' className='min-h-[250px] container'>
-                <h1 className='mb-6'>Abonne toi à la newsletter</h1>
+              <div  className='min-h-[250px] container'>
+                <h1 className='mb-6' id='newsletter'>Abonne toi à la newsletter</h1>
                 <NewsletterForm />
               </div>
-              <div className='container'>
+              <div className='container' id='contact'>
                 <Footer />
               </div>
         </div>
