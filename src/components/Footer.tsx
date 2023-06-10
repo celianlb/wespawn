@@ -13,9 +13,9 @@ export default function Footer() {
                 className='mb-4'                
                 />
                 <ul className="font-rnssanz">
-                    <li className='mb-4' ><a href="#section1">Présentation</a></li>
-                    <li className='mb-4' ><a href="#section2">En savoir plus</a></li>
-                    <li className='mb-8' ><a href="#section3">S'abonner à la Newsletter</a></li>
+                    <li className='mb-4' ><a href="#presentation">Présentation</a></li>
+                    <li className='mb-4' ><a href="#savoirplus">En savoir plus</a></li>
+                    <li className='mb-8' ><a href="#newsletter">S'abonner à la Newsletter</a></li>
                 </ul>
                 <hr />
                 <ul className="flex mt-8 mb-10">

@@ -28,6 +28,11 @@ module.exports = {
         'ppneuemachina': 'var(--font-ppneuemachina)',
         'rnssanz': 'var(--font-rnssanz)',
         'visbycf': 'var(--font-visbycf)',
+      },
+      backgroundImage : {
+        'gamer1' : 'url(/img/gamer1.png)',
+        'gamer2' : 'url(/img/gamer2.png)',
+        'w' : 'url(/img/w.png)',
       }
     },
   },

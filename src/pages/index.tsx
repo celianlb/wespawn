@@ -13,7 +13,7 @@ export default function Home() {
       <body>
         <div className="wrapper">
               <div className="layout min-h-[250px]"></div>
-              <div id='presentation' className='section-about container min-h-[250px] '>
+              <div id='presentation' className='section-about container min-h-[250px] z-[2]'>
                 <h1>
                   <Image 
                     src= '/img/logo.png'
@@ -22,14 +22,14 @@ export default function Home() {
                     alt='WeSpawn Logo'
                     className='mb-2'
                   />
-                </h1>                
+                </h1>                               
                 <h1 className='pb-2 font-ppneuemachina'>L'ESPORT FAIT SUR MESURE</h1>
                 <p className='font-rnssanz'>
                   L'écosystème qui facilite <b>l'organisation des compétitions d'e-sport</b> pour une immersion professionnelles de tous les joueurs.
                 </p>                
-                <button className='bg-var-yellow btn1 font-bold z-10' ><a href="#section2">En savoir plus</a></button>              
+                <button className='bg-var-yellow btn1 font-bold' ><a href="#savoirplus">En savoir plus</a></button>              
               </div>
-              <div className=' container min-h-[250px]'>
+              <div className=' container min-h-[250px]' id='savoirplus'>
                 <h2 className='mb-8 pt-[106px] font-ppneuemachina'>C'EST QUOI ?</h2>
                 <p className=''>
                   Conçu pour les organisateurs d'évènements e-sportif, La plateforme <b>WESPAWN</b> vous garantie une <b>aide à la gestion</b> de vos compétitions en toute simplicité et une <b>visibilité assurée</b> auprès des joueurs.
