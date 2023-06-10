@@ -5,7 +5,7 @@ const Axeptio = () => {
         <Script strategy="afterInteractive" id="axeptio-hotjar">
         {`
             window.axeptioSettings = {
-            const clientId: "6481e6ab8560303fec55a822",
+            clientId: "6481e6ab8560303fec55a822",
             cookiesVersion: "wespawn-fr",
             };
             (function(d, s) {
