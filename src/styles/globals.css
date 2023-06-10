@@ -65,9 +65,9 @@ body h1 {
   width: 530px;
   height: 450px;
   position: absolute;
-  top: 160px;
+  top: 250px;
   left: -130px;
-  z-index: 0;
+  z-index: -1;
 }
 
 /* image gamer2*/
@@ -98,16 +98,3 @@ body h1 {
 
 
 
-@media (min-width: 768px) { 
-  .wrapper > .layout{
-    /*position: absolute;*/
-    background-image: url("/img/gamer1.png");
-    background-color: #cccccc;
-    background-size: cover;
-    background-position:right ;
-    width: 50%;
-    display: flex;
-    justify-content: end;
-    z-index: 0;
-  }
-}

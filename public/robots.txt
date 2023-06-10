@@ -3,4 +3,4 @@ Disallow :
 User-Agent: *
 Allow : / 
 User-agent: *
-Sitemap: http://www.mettre notre url/SEO/sitemap.xml
+Sitemap: https://www.wespawn.fr/sitemap.xml
