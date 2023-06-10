@@ -2,10 +2,10 @@ import Script from "next/script";
 
 const Axeptio = () => {
     return (
-        <Script strategy="afterInteractive">
+        <Script strategy="afterInteractive" id="axeptio-hotjar">
         {`
             window.axeptioSettings = {
-            clientId: "6481e6ab8560303fec55a822",
+            const clientId: "6481e6ab8560303fec55a822",
             cookiesVersion: "wespawn-fr",
             };
             (function(d, s) {
