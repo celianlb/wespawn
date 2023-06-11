@@ -34,7 +34,7 @@ export default function NewsletterForm() {
         type="email"
         placeholder="Adresse e-mail" {...register('email')} />
       {errors.email && <p>Entrer une adresse e-mail valide</p>}
-      <button className='bg-[#EAFE52] text-[#16181D] btn1 hover:bg-[#242629] hover:text-white font-rnssanz font-semibold' type="submit">Envoyer</button>
+      <button className='bg-[#EAFE52] btn1 w-[88px] hover:bg-[#242629] hover:text-white font-rnssanz font-semibold' type="submit">Envoyer</button>
       <style jsx>{`
         .inp {
           padding: 8px;
