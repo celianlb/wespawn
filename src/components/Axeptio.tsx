@@ -5,11 +5,11 @@ const Axeptio = () => {
         <Script strategy="afterInteractive" id="axeptio-hotjar">
         {`
             <!-- Axeptio -->
-            window.axeptioSettings = {
+              window.axeptioSettings = {
                 clientId: "6484704c2ad3bb7dcc849927",
                 cookiesVersion: "wespawn-fr",
               };
-               
+              
               (function(d, s) {
                 var t = d.getElementsByTagName(s)[0], e = d.createElement(s);
                 e.async = true; e.src = "//static.axept.io/sdk.js";

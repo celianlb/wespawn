@@ -16,16 +16,6 @@
   }
 }
 
-@font-face {
-  font-family: 'RNSSanz';
-  src: url('/fonts/RNSSanz') format('truetype');
-  /* Ajoutez d'autres formats de police si nécessaire */
-  /* src: url('/fonts/myfont.woff') format('woff'), */
-  /* src: url('/fonts/myfont.otf') format('opentype'), */
-  /* ... */
-}
-
-
 body {
   background-color: #070707;
   color: #FFFFFF;
@@ -43,7 +33,6 @@ body h1 {
   overflow: hidden;
 }
 
-
 /* image gamer1*/
 .wrapper > .layout{
   position:relative;
@@ -53,7 +42,6 @@ body h1 {
   background-position: center;
   z-index: 0;
 }
-
 
 .wrapper > .layout::before{
   content: "";
@@ -65,13 +53,12 @@ body h1 {
   width: 530px;
   height: 450px;
   position: absolute;
-  top: 250px;
+  top: 150px;
   left: -130px;
   z-index: -1;
 }
 
 /* image gamer2*/
-
 .wrapper > .layout2{
   position:relative;
   background-image: url("/img/gamer2.png");
@@ -96,5 +83,8 @@ body h1 {
   min-height: none;
 }
 
-
-
+.bg-w {
+  background-image: url("/img/background-w.png");
+  background-size: cover;
+  background-position: center;
+}

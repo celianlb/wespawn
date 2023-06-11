@@ -35,8 +35,8 @@ const Countdown = () => {
   }, []);
 
   const containerStyle: React.CSSProperties = {
-    width: '74px',
-    height: '75px',
+    width: '80px',
+    height: '80px',
     padding: '16px',
     display: 'flex',
     flexDirection: 'column',
@@ -49,31 +49,35 @@ const Countdown = () => {
     marginBottom: '64px',
   };
   const digitStyle: React.CSSProperties = {
-
+    fontSize: '24px',
     fontWeight: 'bold',
   };
 
   const labelStyle: React.CSSProperties = {
+    fontSize: '12px',    
   };
 
   return (
     <div className="flex justify-start">
       <div className="text-center" style={containerStyle}>
-        <h2 style={digitStyle}>{timeLeft.days}</h2>
+        <span style={digitStyle}>{timeLeft.days}</span>
         <p style={labelStyle}>Jours</p>
       </div>
       <div className="text-center" style={containerStyle}>
-        <h2 style={digitStyle}>{timeLeft.hours}</h2>
-        <p style={labelStyle}>Heures</p>
+        <span className='' style={digitStyle}>{timeLeft.hours}</span>
+        <p className='' style={labelStyle}>Heures</p>
       </div>
       <div className="text-center" style={containerStyle}>
-        <h2 style={digitStyle}>{timeLeft.minutes}</h2>
+        <span style={digitStyle}>{timeLeft.minutes}</span>
         <p style={labelStyle}>Min</p>
       </div>
       <div className="text-center" style={containerStyle}>
-        <h2 style={digitStyle}>{timeLeft.seconds}</h2>
+        <span style={digitStyle}>{timeLeft.seconds}</span>
         <p style={labelStyle}>Sec</p>
       </div>
+
+      <style jsx>{`
+      `}</style>
     </div>
 
   );

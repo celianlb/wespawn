@@ -7,7 +7,7 @@ export default function Header() {
       <main>
         <nav>
           <div className="container">
-            <div className="flex justify-between items-center p-2.5">
+            <div className="flex justify-between items-center mt-5">
               <Link href="/">
                 <Image 
                     src= '/img/logo_wespawn.png'
@@ -18,9 +18,9 @@ export default function Header() {
               </Link>              
               <span className="md:hidden"><BurgerMenu/></span>
               <div className="hidden md:flex md:justify-end md:items-center w-full md:w-auto font-ppneuemachina">
-                  <a href="#presentation" className="text-white mr-8">PRÉSENTATION</a>
-                  <a href="#newsletter" className="text-white mr-8">NEWSLETTER</a>
-                  <a href="#contact" className="text-white">NOUS CONTACTER</a>
+                  <a href="#presentation" className="text-white mr-8 hover:text-var-yellow">PRÉSENTATION</a>
+                  <a href="#newsletter" className="text-white mr-8 hover:text-var-yellow">NEWSLETTER</a>
+                  <a href="#contact" className="text-white bg-[#1F2526] p-5 rounded-[86px] hover:text-var-yellow">NOUS CONTACTER</a>
               </div>
             </div>
           </div>
