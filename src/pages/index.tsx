@@ -18,7 +18,7 @@ export default function Home() {
                   alt="Gamer Image"
                   width={1464}
                   height={1311}
-                  className='mb-[-130px] md:w-1/2 '
+                  className='mb-[-130px] md:w-[40%]'
                 />
                 <div className='md:mt-[40px]'>
                   <Image
@@ -47,7 +47,7 @@ export default function Home() {
                   alt="Gamer Image"
                   width={1170}
                   height={1363}
-                  className='md:w-1/2'             
+                  className='md:w-[40%]'
                 />
               </div>
               <div className='mt-[-100px] md:mt-[-200px] lg:mt-[-300px]'>
