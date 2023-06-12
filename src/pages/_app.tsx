@@ -42,12 +42,11 @@ const visbycf = localFont({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main
-      className={`${PPNeueMachina.variable} ${RNSSanz.variable} ${visbycf.variable}`}
-    >
+    <main className={`${PPNeueMachina.variable} ${RNSSanz.variable} ${visbycf.variable}`}>
       <Component {...pageProps} />
       <MatomoScript />
-      <Axeptio />      
+      <Axeptio />
+      <GoogleAnalytics />
     </main>
   );
 }
