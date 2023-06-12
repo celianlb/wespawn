@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import MatomoScript from '@/components/MatomoScript';
 import React from 'react';
 import Axeptio from '@/components/Axeptio';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 const PPNeueMachina = localFont({
   src: [
@@ -47,6 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
       <MatomoScript />
       <Axeptio />
+      <GoogleAnalytics />
     </main>
   );
 }
