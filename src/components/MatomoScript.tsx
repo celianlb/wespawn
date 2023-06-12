@@ -7,15 +7,15 @@ const MatomoScript = () => {
     (window as any)._paq.push(['enableLinkTracking']);
 
     (function () {
-      const u = 'https://stellar.matomo.cloud/';
+      const u = 'https://wespawn1.matomo.cloud/';
       (window as any)._paq.push(['setTrackerUrl', u + 'matomo.php']);
-      (window as any)._paq.push(['setSiteId', '2']);
+      (window as any)._paq.push(['setSiteId', '1']);
 
       const d = document;
       const g = d.createElement('script');
       const s = d.getElementsByTagName('script')[0];
       g.async = true;
-      g.src = '//cdn.matomo.cloud/stellar.matomo.cloud/matomo.js';
+      g.src = '//cdn.matomo.cloud/wespawn1.matomo.cloud/matomo.js';
       s.parentNode?.insertBefore(g, s);
     })();
   }, []);
