@@ -5,6 +5,7 @@ const GoogleAnalytics = () => {
         <Script strategy="afterInteractive" id="googleanalytics">
         {`
             <!-- Google tag (gtag.js) -->
+            <script src="https://www.googleoptimize.com/optimize.js?id=jYIJy8fHRge4sgSvSSMojw"></script>
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FW6ZRB566"></script>
             <script>
               window.dataLayer = window.dataLayer || [];
