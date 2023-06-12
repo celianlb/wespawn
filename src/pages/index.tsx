@@ -13,13 +13,15 @@ export default function Home() {
       <body>
         <div className="wrapper container pt-8">
               <div id='presentation' className='flex flex-col mb-[106px] md:flex-row-reverse md:mb-0'>
-                <Image
-                  src="/img/gamer1.png"
-                  alt="Gamer Image"
-                  width={1464}
-                  height={1311}
-                  className='mb-[-130px] md:w-[40%]'
-                />
+                <h1>
+                  <Image
+                    src="/img/gamer1.png"
+                    alt="Gamer Image"
+                    width={1464}
+                    height={1311}
+                    className='mb-[-130px] md:w-[40%]'
+                  />
+                </h1>                
                 <div className='md:mt-[40px]'>
                   <Image
                     src="/img/logo-footer.png"
