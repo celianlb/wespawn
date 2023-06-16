@@ -5,7 +5,6 @@ import localFont from 'next/font/local';
 import MatomoScript from '@/components/MatomoScript';
 import React, { useEffect } from 'react';
 import Axeptio from '@/components/Axeptio';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
 import TagManager from 'gtm-for-react';
 
 const PPNeueMachina = localFont({
