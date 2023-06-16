@@ -56,7 +56,6 @@ TagManager.initialize(tagManagerArgs)
       <Component {...pageProps} />
       <MatomoScript />
       <Axeptio />
-      <GoogleAnalytics />
     </main>
   );
 }
