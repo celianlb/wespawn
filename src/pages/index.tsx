@@ -19,7 +19,7 @@ export default function Home() {
                     alt="Gamer Image"
                     width={1464}
                     height={1311}
-                    className='mb-[-130px] md:w-[40%]'
+                    className='mb-[-130px]'
                   />
                 </h1>                
                 <div className='md:mt-[40px]'>

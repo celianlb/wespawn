@@ -3,9 +3,10 @@ import type { AppProps } from 'next/app'
 import 'tailwindcss/tailwind.css';
 import localFont from 'next/font/local';
 import MatomoScript from '@/components/MatomoScript';
-import React from 'react';
+import React, { useEffect } from 'react';
 import Axeptio from '@/components/Axeptio';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
+import TagManager from 'gtm-for-react';
 
 const PPNeueMachina = localFont({
   src: [
@@ -40,7 +41,16 @@ const visbycf = localFont({
   variable: '--font-visbycf',
 });
 
+const tagManagerArgs = {
+  gtmId: 'GTM-PPT4LFM'
+}
+
 export default function App({ Component, pageProps }: AppProps) {
+
+useEffect(() => {
+TagManager.initialize(tagManagerArgs)
+}, [])
+
   return (
     <main className={`${PPNeueMachina.variable} ${RNSSanz.variable} ${visbycf.variable}`}>
       <Component {...pageProps} />
