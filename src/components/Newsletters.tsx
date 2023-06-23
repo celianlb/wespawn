@@ -49,6 +49,7 @@ export default function NewsletterForm() {
       {errors.email && <p>Entrer une adresse e-mail valide</p>}
       {subscribed && <p>Vous êtes maintenant abonné à notre newsletter</p>}
       <button
+        id='btn-subscribed'
         className='bg-[#EAFE52] btn1 w-[88px] hover:bg-[#242629] hover:text-white font-rnssanz font-semibold'
         type='submit'
       >
