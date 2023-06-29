@@ -1,0 +1,228 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  background-color: #1D1B26;
+  overflow-x: hidden;
+}
+
+#bg-lock {
+  background: url("/img/locker.svg") no-repeat right 32px top 24px;
+  background-color: #2F2B3F;
+}
+
+#__next:has(#bg-tuyau)  {
+  background: url("/img/tuyau.svg") no-repeat right 130px / 60% auto;
+  padding-bottom: 30px;
+}
+
+#bg-triangle{
+  background: url("/img/bg-triangle.svg") no-repeat center right / 165px auto;
+  position: relative;
+}
+
+#bg-circle{
+  background: url("/img/bg-circle.svg") no-repeat center right / 165px auto;
+  position: relative;
+
+}
+
+#bg-square{
+  background: url("/img/bg-square.svg") no-repeat center right / 165px auto;
+  position: relative;
+}
+
+.westroke {
+  color: #1D1B26;
+  text-shadow: 0 0 1px #4E4C58;
+  font-size: 60px;
+}
+
+@media (min-width: 768px) {
+  #__next:has(#bg-tuyau)  {
+    background: url("/img/tuyau.svg") no-repeat 130% 155px / auto 280px;
+    padding-bottom: 30px;
+  }
+  .westroke {
+    color: #1D1B26;
+    text-shadow: 0 0 1px #4E4C58;
+    font-size: 100px;
+  }
+  
+}
+
+@media (min-width: 1023px) {
+  #__next:has(#bg-tuyau)  {
+    background: url("/img/tuyau.svg") no-repeat right 180px / auto 280px;
+    padding-bottom: 30px;
+  }
+  #bg-triangle{
+    background: url("/img/bg-triangle.svg") no-repeat center right / 250px auto;
+    position: relative;
+  }
+  
+  #bg-circle{
+    background: url("/img/bg-circle.svg") no-repeat center right / 250px auto;
+    position: relative; 
+  }  
+  #bg-square{
+    background: url("/img/bg-square.svg") no-repeat center right / 250px auto;
+    position: relative;
+  }
+}
+
+@media (min-width: 1280px) {
+  #__next:has(#bg-tuyau)  {
+    background: url("/img/tuyau.svg") no-repeat right 180px / auto 280px;
+    padding-bottom: 30px;
+  }
+  #bg-triangle{
+    background: url("/img/bg-triangle.svg") no-repeat center right / 300px auto;
+    position: relative;
+  }
+  
+  #bg-circle{
+    background: url("/img/bg-circle.svg") no-repeat center right / 300px auto;
+    position: relative; 
+  }
+  
+  #bg-square{
+    background: url("/img/bg-square.svg") no-repeat center right / 300px auto;
+    position: relative;
+  }
+
+  .westroke {
+    color: #1D1B26;
+    text-shadow: 0 0 1px #4E4C58;
+    font-size: 120px;    
+  }
+  
+}
+
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+
+#icon-search {
+  background: url("/img/icon-search.svg") no-repeat center left / 12px 12px;
+}
+
+.sort-option input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+.sort-option input[type="radio"] {
+  appearance: none; /* Masque le style par défaut du radio bouton */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  transition: border-color 0.3s ease;
+}
+
+.sort-option input[type="radio"]:checked {
+  border: 9px solid #02FEF3;
+}
+
+.sort-option input[type="radio"]:focus {
+  outline: none; /* Supprime l'outline par défaut sur le focus */
+}
+
+.sort-option input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #FFF; /* Couleur du point central */
+  transform: translate(-1px, -1px); /* Positionne le point central */
+  opacity: 0; /* Rend le point central invisible par défaut */
+
+}
+
+.sort-option input[type="radio"]:checked::before {
+  opacity: 1; /* Rend le point central visible lorsque le radio bouton est coché */
+}
+
+ 
+@keyframes modalOpenAnimation {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-open-animation {
+  animation-name: modalOpenAnimation;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+}
+
+
+#card::-webkit-scrollbar {
+  display: none;
+}
+
+/* Styles personnalisés pour l'input de type range */
+input[type="range"] {
+  /* Réinitialisation des styles par défaut */
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  appearance: none;
+  /* Dimensions de la jauge */
+  height: 1px;
+  /* Style de la jauge */
+  background-color: white; /* Couleur de la jauge blanche */
+  border-radius: 4px; /* Coins arrondis de la jauge */
+}
+
+/* Style du curseur */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  background-color: #1D1B26; 
+  border: 2px solid white; 
+  border-radius: 50%;
+  margin-top: -10px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background-color: transparent;
+  border-radius: 4px;
+}
