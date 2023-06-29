@@ -328,12 +328,14 @@ export default function Home() {
         </aside>
       </section>
 
-      {/*VIDEO MOTION DESIGN*/}
+      {/*VIDEO MOTION DESIGN
       <section className="px-6 md:px-[110px] 2xl:container ">
         <div className="mb-24 md:mb-[120px]">
           <p>VIDEO MD</p>
         </div>
-      </section>
+      </section>      
+      */}
+      
 
       {/*Partenaire*/}
       <section className="px-6 md:px-[110px] 2xl:container ">
