@@ -18,9 +18,10 @@ export default function Header() {
             <span className="lg:hidden"><BurgerMenu/></span>
             <div className="hidden font-rnssanzbold space-x-6 lg:flex lg:items-center">
               <Link href="/annuaire" className="text-white">TROUVER UNE SALLE</Link>
-              <Link href="/" className="text-white">ACTUALITÉS</Link>
-              <Link href="/" className="text-white">CONTACT</Link>
-              <Link href="/auth/login" className="bg-var-blue flex px-[24px] py-[16px] rounded-[100px] text-var-grey" >
+              <Link href="/blog" className="text-white">ACTUALITÉS</Link>
+              <Link href="/avis" className="text-white">CONTACT</Link>              
+            </div>
+            <Link href="/auth/login" className="bg-var-blue font-rnssanzbold flex px-[24px] py-[16px] rounded-[100px] text-var-grey" >
                   JE SUIS ORGANISATEUR                  
                 <div className="mt-[6px] pl-1">
                   <Image 
@@ -31,7 +32,6 @@ export default function Header() {
                   />
                 </div>                
               </Link>
-            </div>
           </div>
         </nav>
       </main>

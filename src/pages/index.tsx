@@ -19,6 +19,8 @@ export default function Home() {
           content="Découvrez Wespawn, la plateforme de gestion d&rsquo;évènement esportifs Française, offrant des outils innovants pour une organisation simplifié de vos tournois."
         />
       </Head>
+      <div className="ellipse"></div>
+      <div className="ellipse2"></div>
       <Header />
 
       {/*SECTION HERO*/}
@@ -328,13 +330,12 @@ export default function Home() {
         </aside>
       </section>
 
-      {/*VIDEO MOTION DESIGN
+      {/*VIDEO MOTION DESIGN*/}
       <section className="px-6 md:px-[110px] 2xl:container ">
         <div className="mb-24 md:mb-[120px]">
-          <p>VIDEO MD</p>
+        <iframe className="w-full h-[190px] md:h-[575px]" src="https://www.youtube.com/embed/87SPn5DmXmc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
         </div>
       </section>      
-      */}
       
 
       {/*Partenaire*/}

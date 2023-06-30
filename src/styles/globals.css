@@ -77,6 +77,41 @@ body {
 }
 
 @media (min-width: 1023px) {
+  .ellipse {
+    position: absolute;
+    width: 251px;
+    height: 252px;
+    left: -82px;
+    top: 60px;
+    background: #02FEF34D;
+    filter: blur(150px);
+    z-index: -1;
+  }
+
+  .ellipse2{
+    position: absolute;
+    width: 251px;
+    height: 252px;
+    left: 1276px;
+    top: 545px;
+    border-radius: 252px;
+    background-color: #FD099B80;
+    filter: blur(150px);
+    z-index: -1;
+
+
+  }
+
+  .ellipse3 {
+    position: absolute;
+    width: 251px;
+    height: 252px;
+    left: -82px;
+    top: 60px;
+    background: #FD099B80;
+    filter: blur(150px);
+    z-index: -1;
+  }
   #__next:has(#bg-tuyau)  {
     background: url("/img/tuyau.svg") no-repeat right 180px / auto 280px;
     padding-bottom: 30px;
@@ -226,3 +261,5 @@ input[type="range"]::-webkit-slider-runnable-track {
   background-color: transparent;
   border-radius: 4px;
 }
+
+

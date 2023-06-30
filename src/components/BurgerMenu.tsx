@@ -47,10 +47,10 @@ const BurgerMenu = () => {
             <Link href="#section2" className="text-white mb-[56px]" onClick={closeMenu}>
             TARIFS
             </Link>
-            <Link href="#section3" className="text-white mb-[56px]" onClick={closeMenu}>
+            <Link href="/blog" className="text-white mb-[56px]" onClick={closeMenu}>
             ACTUALITÉS
             </Link>
-            <Link href="/" className="text-white mb-[56px]" onClick={closeMenu}>
+            <Link href="/avis" className="text-white mb-[56px]" onClick={closeMenu}>
             CONTACT
             </Link>
             <Link href="/auth/login" className="bg-var-blue flex px-[24px] py-[16px] rounded-[100px] text-var-grey" >

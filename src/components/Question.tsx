@@ -11,7 +11,7 @@ const QuestionComponent = () => {
   };
 
   return (
-    <div className="flex flex-col justify-between md:flex-row-reverse gap-[74px]">
+    <div className="flex flex-col my-20 justify-between md:flex-row-reverse gap-[74px]">
       <div className="md:w-1/2">
         <div className="float-right w-full">
           <div className="flex  flex-col gap-4">
