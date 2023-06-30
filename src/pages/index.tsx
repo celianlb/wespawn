@@ -7,7 +7,9 @@ import Footer from "@/components/Footer";
 import QuestionComponent from "@/components/Question";
 import Head from "next/head";
 
+
 export default function Home() {
+  
   return (
     <main id="bg-tuyau" className="text-white">
       <Head>
@@ -142,13 +144,13 @@ export default function Home() {
                 />
                 <div className="font-rnssanz text-txt-xs md:text-txt flex flex-row py-4 px-4 md:py-10 md:px-[54px] justify-between">
                   <div>
-                    <p className="fon">
+                    <p>
                       Bootcamp Gaming
                       <br />
                       22 Rue Pozzo di Borgo, Saint Cloud, France
                     </p>
                     <Link
-                      href="/"
+                      href="/annuaire/#esportbox"
                       className="w-fit underline flex mt-4 text-var-blue"
                     >
                       {" "}
@@ -206,7 +208,7 @@ export default function Home() {
               {/*FN 1*/}
               <div
                 id="bg-lock"
-                className="opacity-[65%] rounded-lg px-8 py-6 md:py-8 space-y-6"
+                className="opacity-[65%] rounded-lg px-8 py-6 md:py-8 space-y-6 cursor-not-allowed"
               >
                 <h3 className="text-h3-mobil md:text-h3-mobil font-montserratblack mb-4">
                   ESPACE PRO
@@ -229,7 +231,7 @@ export default function Home() {
               {/*FN 2*/}
               <div
                 id="bg-lock"
-                className="opacity-[65%] bg-var-grey rounded-lg px-8 py-6 md:py-8 mt-[54px] space-y-6 "
+                className="opacity-[65%] bg-var-grey rounded-lg px-8 py-6 md:py-8 mt-[54px] space-y-6 cursor-not-allowed"
               >
                 <h3 className="text-h3-mobil md:text-h3-mobil font-montserratblack mb-4">
                   BILLETERIE EN LIGNE
@@ -252,7 +254,7 @@ export default function Home() {
               {/*FN 3*/}
               <div
                 id="bg-lock"
-                className="opacity-[65%] bg-var-grey rounded-lg px-8 py-6 md:py-8 mt-[54px] space-y-6 "
+                className="opacity-[65%] bg-var-grey rounded-lg px-8 py-6 md:py-8 mt-[54px] space-y-6 cursor-not-allowed"
               >
                 <h3 className="text-h3-mobil md:text-h3-mobil font-montserratblack mb-4">
                   SUIVIE DES PERF
@@ -333,10 +335,14 @@ export default function Home() {
       {/*VIDEO MOTION DESIGN*/}
       <section className="px-6 md:px-[110px] 2xl:container ">
         <div className="mb-24 md:mb-[120px]">
-        <iframe className="w-full h-[190px] md:h-[575px]" src="https://www.youtube.com/embed/87SPn5DmXmc" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+          <iframe
+            className="w-full h-[190px] md:h-[575px]"
+            src="https://www.youtube.com/embed/87SPn5DmXmc"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          ></iframe>
         </div>
-      </section>      
-      
+      </section>
 
       {/*Partenaire*/}
       <section className="px-6 md:px-[110px] 2xl:container ">

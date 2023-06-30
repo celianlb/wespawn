@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 import { Room } from "../../../typings";
 import { GetServerSideProps, GetStaticProps } from "next";
 import { fetchAllRoom } from "@/utils/fetchRoom";
@@ -17,7 +19,7 @@ type Props = {
   rooms: Room[];
 };
 
-export const getServerSideProps: GetServerSideProps<Props>= async () => {
+export const getServerSideProps: GetServerSideProps<Props> = async () => {
   const rooms: Room[] = await fetchAllRoom();
 
   return {
@@ -39,8 +41,20 @@ export default function Annuaire({ rooms }: Props) {
   const [selectedRoom, setSelectedRoom] = useState<Room | null>(null);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
 
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+
+  useEffect(() => {
+    const slugFromUrl = window.location.hash.substr(1);
+    setSelectedSlug(slugFromUrl);
+  }, []);
+
+  const router = useRouter();
+
   const handleModalOpen = (room: Room) => {
     setSelectedRoom(room);
+    setSelectedSlug(room.slug.current);
+    window.location.hash = room.slug.current;
+    router.push(`/annuaire/#${room.slug.current}`);
   };
 
   const handleContactModalOpen = () => {
@@ -199,7 +213,7 @@ export default function Annuaire({ rooms }: Props) {
         </div>
       </div>
       <Footer />
-      {selectedRoom && (
+      {selectedRoom && selectedRoom.slug.current === selectedSlug && (
         <div className="fixed top-0 left-0 flex justify-center items-center w-full h-full bg-black bg-opacity-75">
           <div className="relative">
             <div
@@ -209,7 +223,10 @@ export default function Annuaire({ rooms }: Props) {
               }`}
             >
               <button
-                onClick={() => setSelectedRoom(null)}
+                onClick={() => {
+                  setSelectedRoom(null);
+                  router.push("/annuaire");
+                }}
                 className=" text-white rounded-lg absolute top-2 right-2 mx-4 my-2"
               >
                 X

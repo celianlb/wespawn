@@ -63,7 +63,7 @@ const BurgerMenu = () => {
                     alt='Arrow CTA'                    
                   />
                 </div>                
-              </Link>
+            </Link>
         </div>
       </Transition>
 
