@@ -78,11 +78,38 @@ export default function Login() {
       </Head>
       <div>
         <Header />
-        <div className=" text-white grid-cols-1 md:grid-cols-2 mb-16">
+        <div className=" text-white mb-16">
           <div className="mx-auto flex flex-col justify-start gap-10 pt-16">
             <h2 className="text-center  font-montserratblack text-4xl font-bold">
               Connexion ou inscription
             </h2>
+            <div className="">
+              <form
+                className="flex flex-col items-center"
+                onSubmit={handleSubmit(onSubmit)}
+              >
+                <Input
+                  id="email"
+                  type="text"
+                  placeholder="Adresse e-mail"
+                  register={register("email")}
+                  error={errors.email?.message}
+              
+                />
+                <button
+                  type="submit"
+                  className="mt-8 uppercase flex w-full md:w-[675px] items-center rounded-[8px] text-var-grey font-rnssanzbold bg-var-blue py-4 px-6 justify-center"
+                >
+                  Continuer
+                </button>
+              </form>
+            </div>
+            <div className="flex flex-row items-center justify-center">
+              <hr className=" border-t w-72 border-gray-300" />
+              <p className="mx-4">ou</p>
+              <hr className=" w-72 border-t border-gray-300" />
+            </div>
+
             <div className="flex justify-center">
               <GoogleButton />
             </div>
@@ -95,41 +122,5 @@ export default function Login() {
 }
 
 /**
- * <div className="flex items-center">
-            <hr className="flex-grow border-t border-gray-300" />
-            <p className="mx-4">ou</p>
-            <hr className="flex-grow border-t border-gray-300" />
-          </div>
- <div>
-            <form className="w-full" onSubmit={handleSubmit(onSubmit)}>
-              <Input
-                id="email"
-                type="email"
-                label="Adresse mail"
-                placeholder="Votre adresse email"
-                register={register('email')}
-                error={errors.email?.message}
-              />
-              <Input
-                id="password"
-                type="password"
-                label="Mot de passe"
-                placeholder="Votre mot de passe"
-                register={register('password')}
-                error={errors.password?.message}
-              />
-              <div className="mt-8 flex items-center justify-center">
-                <Button type="submit">Se connecter</Button>
-              </div>
-              <p className="mt-8 text-center">
-                Vous n&apos;avez pas de compte ?{' '}
-                <Link
-                  href={'/auth/signup'}
-                  className="font-medium dark:text-secondary"
-                >
-                  Inscrivez-vous
-                </Link>
-              </p>
-            </form>
-          </div>
+ *
  */

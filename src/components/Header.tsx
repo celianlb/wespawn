@@ -20,7 +20,7 @@ export default function Header() {
               <Link href="/annuaire" className="text-white">TROUVER UNE SALLE</Link>
               <Link href="/" className="text-white">ACTUALITÉS</Link>
               <Link href="/" className="text-white">CONTACT</Link>
-              <Link href="/auth/signup" className="bg-var-blue flex px-[24px] py-[16px] rounded-[100px] text-var-grey" >
+              <Link href="/auth/login" className="bg-var-blue flex px-[24px] py-[16px] rounded-[100px] text-var-grey" >
                   JE SUIS ORGANISATEUR                  
                 <div className="mt-[6px] pl-1">
                   <Image 

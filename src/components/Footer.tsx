@@ -27,9 +27,9 @@ export default function Footer() {
                 <div className='md:w-fit justify-center'>
                     <p className='mb-2 font-rnssanzbold'>Suivez nous sur nos réseaux !</p>
                     <ul className='flex flex-row space-x-8'>
-                        <li><Link href="/"><Image src={"/img/insta.svg"} width={30} height={30} alt='Insta'/></Link></li>
-                        <li><Link href="/"><Image src={"/img/twitter.svg"} width={30} height={30} alt='Twitter'/></Link></li>
-                        <li><Link href="/"><Image src={"/img/discord.svg"} width={30} height={30} alt='Discord'/></Link></li>
+                        <li><Link href="https://www.instagram.com/wespawn.fr/"><Image src={"/img/insta.svg"} width={30} height={30} alt='Insta'/></Link></li>
+                        <li><Link href="https://twitter.com/wespawn_fr"><Image src={"/img/twitter.svg"} width={30} height={30} alt='Twitter'/></Link></li>
+                        <li><Link href="https://discord.com/invite/WjtPvnvR"><Image src={"/img/discord.svg"} width={30} height={30} alt='Discord'/></Link></li>
                     </ul>
                 </div>                                          
             </div>

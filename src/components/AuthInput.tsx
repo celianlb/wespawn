@@ -51,6 +51,7 @@ export default function Input({
               type={showPassword ? 'text' : type}
               id={id}
               placeholder={placeholder}
+              className="w-fit py-4 px-6 rounded-[8px] md:w-[675px] bg-var-grey"
             />
             {type === 'password' && (
               <button
