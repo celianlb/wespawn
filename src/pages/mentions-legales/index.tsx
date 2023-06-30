@@ -1,93 +1,10 @@
 import React, { useState } from "react";
-import { Room } from "../../../typings";
-import { GetStaticProps } from "next";
-import { fetchAllRoom } from "@/utils/fetchRoom";
-import { urlFor } from "@/sanity";
 import Header from "@/components/Header";
-import Image from "next/image";
 import Footer from "@/components/Footer";
-import SortFilters from "@/components/SortFilters";
-import LocalisationFilter from "@/components/LocalisationFilter";
-import CapacityFilter from "@/components/CapacityFilter";
-import BudgetFilter from "@/components/BudgetFilter";
 import Head from "next/head";
 
-type Props = {
-  rooms: Room[];
-};
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const rooms: Room[] = await fetchAllRoom();
-
-  return {
-    props: {
-      rooms,
-    },
-    revalidate: 10,
-  };
-};
-
-export default function Annuaire({ rooms }: Props) {
-  const [search, setSearch] = useState("");
-  const [sortOption, setSortOption] = useState("");
-  const [showSortModal, setShowSortModal] = useState(false);
-  const [formattedSort, setFormattedSort] = useState("");
-  const [isSearchEnabled, setIsSearchEnabled] = useState(false);
-  const [searchCity, setSearchCity] = useState("");
-  const [capacityFilter, setCapacityFilter] = useState(0);
-
-  const handleCloseSortModal = () => {
-    setShowSortModal(false);
-  };
-
-  const handleSortOptionChange = (option: string) => {
-    setSortOption(option);
-    setFormattedSort(option.charAt(0).toUpperCase() + option.slice(1));
-  };
-
-  const handleLocationFilterChange = (city: string) => {
-    setSearchCity(city);
-  };
-
-  const handleCapacityFilterChange = (capacity: number) => {
-    setCapacityFilter(capacity);
-  };
-
-  const filteredRooms = isSearchEnabled
-    ? rooms.filter((room) => {
-        return (
-          search.toLowerCase() === "" ||
-          room.title.toLowerCase().includes(search.toLowerCase())
-        );
-      })
-    : rooms;
-
-  const locationFilteredRooms = searchCity
-    ? filteredRooms.filter((room) => {
-        return room.city.toLowerCase() === searchCity.toLowerCase();
-      })
-    : filteredRooms;
-
-  const capacityFilteredRooms = capacityFilter
-    ? locationFilteredRooms.filter((room) => {
-        return room.person >= capacityFilter;
-      })
-    : locationFilteredRooms;
-
-  const sortedRooms = capacityFilteredRooms.sort((a, b) => {
-    if (sortOption === "PRIX CROISSANT") {
-      return a.price - b.price;
-    } else if (sortOption === "PRIX DECROISSANT") {
-      return b.price - a.price;
-    } else if (sortOption === "SUPERFICIE CROISSANT") {
-      return a.size - b.size;
-    } else if (sortOption === "SUPERFICIE DECROISSANT") {
-      return b.size - a.size;
-    } else {
-      return 0;
-    }
-  });
-
+export default function Legal() {
   return (
     <div className="text-white">
       <Head>

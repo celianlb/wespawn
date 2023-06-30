@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Room } from "../../../typings";
-import { GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticProps } from "next";
 import { fetchAllRoom } from "@/utils/fetchRoom";
 import { urlFor } from "@/sanity";
 import Header from "@/components/Header";
@@ -17,14 +17,13 @@ type Props = {
   rooms: Room[];
 };
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getServerSideProps: GetServerSideProps<Props>= async () => {
   const rooms: Room[] = await fetchAllRoom();
 
   return {
     props: {
       rooms,
     },
-    revalidate: 10,
   };
 };
 
