@@ -142,7 +142,7 @@ export default function Annuaire({ rooms }: Props) {
       <div className="px-6 mt-12 font-rnssanz md:mt-[72px] md:px-[110px] 2xl:container">
         <div className="mb-6">
           <div className="flex flex-wrap mb-12 gap-2">
-            <form className="">
+            <form>
               <input
                 id="search icon-search"
                 name="search"

@@ -315,7 +315,7 @@ export default function Home() {
                 Dach
               </p>
               <Link
-                href="/"
+                href="/blog"
                 className="uppercase w-fit mt-6 mb-[54px] bg-var-grey text-txt-btn-mobil text-left flex font-rnssanzbold px-6 py-4 rounded-[100px] md:mt-[72px] md:text-txt-btn-ds"
               >
                 Lire l&rsquo;article

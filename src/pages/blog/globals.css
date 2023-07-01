@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  background: #1D1B26;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+@media (min-width: 768px) {
+
+  body{
+    margin-left: 110px;
+    margin-right: 110px;
+  }
+
+  .left-align {
+    text-align: left;
+  }
+
+  .ellipse {
+    position: absolute;
+    width: 251px;
+    height: 252px;
+    left: -82px;
+    top: 60px;
+    background: #02FEF34D;
+    filter: blur(150px);
+    z-index: -1;
+  }
+
+  .ellipse2{
+    position: absolute;
+    width: 251px;
+    height: 252px;
+    left: 1276px;
+    top: 545px;
+    border-radius: 252px;
+    background-color: #FD099B80;
+    filter: blur(150px);
+    z-index: -1;
+
+    
+  }
+  
+}
+
+
